@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUM-454 Demo - Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+</head>
+
+<body>
+    <header class="container mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">HUM-454 Demo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="viewer.html">Viewer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-4">
+        <article class="container my-4">
+            <section class="container">
+                <div class="row">
+                    <div class="col">
+                        <div id="map" style="height: 600px;"></div>
+                    </div>
+                    <div class="col">
+                        <h1>Map</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, repellendus. Consequatur ipsa culpa non. Quaerat at quos ipsam iste amet laudantium corrupti, corporis natus voluptatibus, maxime adipisci. Maiores, deserunt odit.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="container my-5">
+                <div class="row">
+                    <div class="col">
+                        <iframe src="https://1p175.csb.app/uv.html#?manifest=https://wellcomelibrary.org/iiif/b18035723/manifest&c=0&m=0&cv=1&config=&locales=en-GB:English (GB),cy-GB:Cymraeg,fr-FR:Français (FR),pl-PL:Polski,sv-SE:Svenska&xywh=190,499,2109,1355&r=0" width="100%" height="600" allowfullscreen frameborder="0"></iframe>
+                    </div>
+                    <div class="col">
+                        <h1>Viewer</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ullam! Doloribus iste, assumenda quas ratione veniam ipsam provident, aspernatur dolor, delectus omnis minima maxime quis voluptates porro eaque quod nulla?</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <section class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="text-input">Enter the value of the new first-level heading item: </label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="text" id="text-input" class="text-input" />
+                        </div>
+                        <div class="col-auto">
+                            <input type="submit" value="Submit new first level item" class="submit-button" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container mt-5 bg-light">
+        <div class="row justify-content-between p-4">
+            <div class="col-2">Copyright</div>
+            <div class="col-2">Contact</div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="map.js"></script>
+    <script src="viewer.js"></script>
+</body>
+
+</html>
